@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm YOUR EMAIL</title>
+</head>
+<body>
+<h1>Confirm YOUR EMAIL</h1>
+{{ url_for('auth.confirm', token=token, _external=True) }}
+</body>
+</html>
