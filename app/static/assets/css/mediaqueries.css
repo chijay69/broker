@@ -1,0 +1,22 @@
+.balance
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    width: auto;
+}
+
+.balance > div
+{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.space
+{
+    text-align: left;
+    margin-right: 25rem;
+}
