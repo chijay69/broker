@@ -3,3 +3,4 @@ menv
 migrations
 __MACOSX
 venv
+*.pyc

@@ -15,6 +15,10 @@ def index():
 
 @main.route('/user/<name>')
 def user(name):
+    # TO-DO
+    # try to work on this and improve it.
+    # Get the id to not display as url
+
     user = User.query.filter_by(first_name=name).first_or_404()
     return render_template('main/user.html', user=user)
 
