@@ -29,10 +29,9 @@ class DevelopmentConfig(Config):
     DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD", "SqlBot")
     DATABASE_DRIVER = os.environ.get("DATABASE_DRIVER", "ODBC + Driver + 17 + for +SQL + Server")
 
-    SQLALCHEMY_DATABASE_URI = f'mssql+pymssql://{DATABASE_USERNAME}:{quote_plus(DATABASE_PASSWORD)}@{DATABASE_HOST}/{DATABASE_NAME}?{DATABASE_DRIVER}'
+    # SQLALCHEMY_DATABASE_URI = f'mssql+pymssql://{DATABASE_USERNAME}:{quote_plus(DATABASE_PASSWORD)}@{DATABASE_HOST}/{DATABASE_NAME}?{DATABASE_DRIVER}'
 
-# SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir,
-    # 'data-dev.sqlite')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
 
 
 class TestingConfig(Config):
