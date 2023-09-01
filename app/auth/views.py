@@ -18,7 +18,7 @@ def secret():
 def register():
     form = RegistrationForm()
     if not form.validate_on_submit():
-        flash('User already exist or enter correct information')
+        flash('User already exist or information incorrect')
         return render_template('auth/register.html', form=form)
     else:
         user = User(email=form.email.data, first_name=form.firstname.data,
