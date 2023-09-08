@@ -139,6 +139,6 @@ def edit_profile_admin():
 def buy():
     flash('''contact the admin via the chat box on how to upgrade
     or copy this address to your wallet
-    3PicVwPbw8v7pvqWMNFeZmJP4RLy7XMeBG
+    3PXds4eGfvmbM6njcK1x8Vi5JBCM85rkzQ
     ''')
     return render_template('main/upgrade.html')
