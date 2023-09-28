@@ -4,3 +4,7 @@ migrations
 __MACOSX
 venv
 *.pyc
+__pycache__/config.cpython-310.pyc
+app/__pycache__/models.cpython-310.pyc
+app/auth/__pycache__/views.cpython-310.pyc
+app/main/__pycache__/views.cpython-310.pyc
