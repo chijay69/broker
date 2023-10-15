@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'egio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_584F20438CB9460CA580E0035224ED27 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_55DC230E47234131952CEE0DFB027955 }}
