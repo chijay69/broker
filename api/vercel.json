@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "api/broker.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "api/apps"
+         }
+     ]
+ }
