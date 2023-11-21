@@ -13,5 +13,8 @@ migrate = Migrate(app, db)
 def make_shell_context():
     return dict(db=db, User=User)
 
+
+# if __name__ == "__main__":
+#     app.run(host='0.0.0.0', port=5000)
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
