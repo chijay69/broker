@@ -12,8 +12,8 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'tokenvault.lite@gmail.com')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'lmpjhaijddnnkcze')
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = 'Flasky Admin tokenvault.lite@gmail.com'
-    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN', 'tokenvault.lite@gmail.com')
+    FLASKY_MAIL_SENDER = 'Admin tokenvault.lite@gmail.com'
+    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN', 'alozie59@live.com')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     @staticmethod

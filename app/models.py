@@ -78,7 +78,7 @@ class User(UserMixin, db.Model):
 
     @property
     def is_administrator(self):
-        return current_user.email == 'chijay59@gmail.com'
+        return current_user.email == current_app.config.get('FLASKY_ADMIN')
 
     def __repr__(self):
         return '<User %r>' % self.first_name
