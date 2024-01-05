@@ -9,8 +9,8 @@ class Config:
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.googlemail.com')
     MAIL_PORT = int(os.environ.get('MAIL_PORT', '587'))
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'True').lower() in ['true', 'on', '1']
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'tokenvault.lite@gmail.com')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'lmpjhaijddnnkcze')
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'coininfinix@gmail.com')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'knkvbgxpxcnpffey')
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'Admin tokenvault.lite@gmail.com'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN', 'richiikevin007@gmail.com')
