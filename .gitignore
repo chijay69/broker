@@ -1,6 +1,6 @@
 env
 menv
-migrations
+egio/migrations
 __pycache__/
 __MACOSX
 venv

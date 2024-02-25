@@ -9,11 +9,15 @@ class Config:
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.googlemail.com')
     MAIL_PORT = int(os.environ.get('MAIL_PORT', '587'))
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'True').lower() in ['true', 'on', '1']
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'coininfinix@gmail.com')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'knkvbgxpxcnpffey')
-    FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = 'Admin tokenvault.lite@gmail.com'
-    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN', 'richiikevin007@gmail.com')
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'chichindundu@gmail.com')
+    # MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'coininfinix@gmail.com')
+    # MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'knkvbgxpxcnpffey')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'kjtrgujsrmedvidu')
+    FLASKY_MAIL_SUBJECT_PREFIX = 'CRYPTO INVEST'
+    # FLASKY_MAIL_SENDER = 'Admin tokenvault.lite@gmail.com'
+    FLASKY_MAIL_SENDER = 'Admin chichindundu@gmail.com'
+    # FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN', 'richiikevin007@gmail.com')
+    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN', 'chijay59@gmail.com')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     @staticmethod
@@ -31,7 +35,7 @@ class DevelopmentConfig(Config):
 
     # SQLALCHEMY_DATABASE_URI = f'mssql+pymssql://{DATABASE_USERNAME}:{quote_plus(DATABASE_PASSWORD)}@{DATABASE_HOST}/{DATABASE_NAME}?{DATABASE_DRIVER}'
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'data-dev-unpaid.sqlite')
 
 
 class TestingConfig(Config):
@@ -41,7 +45,7 @@ class TestingConfig(Config):
 
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'data-unpaid.sqlite')
 
 
 config = {
